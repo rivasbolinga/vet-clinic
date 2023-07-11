@@ -41,7 +41,6 @@ VET CLINIC is a relational database of a vet clinic. Built the database in my lo
 
 - **Database vet_clinic created in my local environment**
 - **Created a table with the columns: id, name, date_of_birth, escape_attempts, neutered, weight_kg**
-- **Requested queries**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
