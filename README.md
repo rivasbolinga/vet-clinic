@@ -12,8 +12,6 @@
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -65,10 +63,10 @@ Not available at the moment. Coming soon...
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Create data of animals]**
-- [ ] **[Create data of animals' owners]**
-- [ ] **[Create data of the clinic employees]**
-- [ ] **[Create data of the visits]**
+- [ ] **Create data of animals**
+- [ ] **Create data of animals' owners**
+- [ ] **Create data of the clinic employees**
+- [ ] **Create data of the visits**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
