@@ -25,7 +25,7 @@ VALUES ('Charmander', '2020-02-08', -11, false, 0),
 ----------------------------------------------------------    
 /* 3-- Query multiple tables */
 
----- Owners table
+---- Insert data to owners table
 INSERT INTO owners (
   full_name,
   age
@@ -37,4 +37,19 @@ VALUES ('Sam Smith', 34),
 ('Dean Winchester', 14),
 ('Jodie Whittaker', 38);
 
----- Species table
+---- Insert data to species table
+
+INSERT INTO species (name)
+VALUES ('Pokemon'), ('Digimon');
+
+---- Modify your inserted animals so it includes the species_id value;
+-- 1. If the name ends in 'mon' it will be Digimon.
+UPDATE animals
+SET species_id = (SELECT id FROM species WHERE name = 'Digimon')
+WHERE name LIKE '%mon';
+
+-- 2. All the other animals are Pokemon
+
+UPDATE animals SET species_id = (SELECT id FROM species WHERE name = 'Pokemon') WHERE NOT (name LIKE '%mon');
+
+----- Modify your inserted animals so include owner information (owner_id);
