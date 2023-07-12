@@ -17,7 +17,7 @@
 
 # 📖 VET CLINIC <a name="about-project"></a>
 
-VET CLINIC is a relational database of a vet clinic. Built the database in my local environment, where I just have access to it.
+VET CLINIC is a relational database of a vet clinic. I have constructed this database within my local environment to facilitate study and practice of transactions and queries in the database using PostgreSQL.
 
 
 
@@ -38,7 +38,10 @@ VET CLINIC is a relational database of a vet clinic. Built the database in my lo
 
 
 - **Database vet_clinic created in my local environment**
-- **Created a table with the columns: id, name, date_of_birth, escape_attempts, neutered, weight_kg**
+- **Created a table called animals with the columns: id, name, date_of_birth, escape_attempts, neutered, weight_kg**
+- **Created a table called owners with the columns: id, full_name, and age**
+- - **Created a table species with the columns: id and name**
+  - 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
@@ -62,9 +65,6 @@ Not available at the moment. Coming soon...
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
-- [ ] **Create data of animals**
-- [ ] **Create data of animals' owners**
 - [ ] **Create data of the clinic employees**
 - [ ] **Create data of the visits**
 

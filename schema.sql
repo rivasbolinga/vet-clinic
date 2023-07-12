@@ -11,8 +11,36 @@ CREATE TABLE animals (
     weight_kg FLOAT NOT NULL,
 );
 
+----------------------------------------------------------
 /* 2-- Update and delete table */
 
-/* - Add new column called species of type string */
+-- Add new column called species of type string
 ALTER TABLE animals ADD COLUMN species VARCHAR(50);
-    
+
+----------------------------------------------------------    
+/* 3-- Query multiple tables */
+
+--Create a table named owners with the following columns: id as integer (set it as autoincremented primary key), full_name as string and age as integer.
+CREATE TABLE owners (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    full_name VARCHAR(150) NOT NULL,
+    age INT NOT NULL
+);
+
+--Create a table named species with the following columns; id as integer (set it as autoincremented primary key), name as string.
+
+CREATE TABLE species (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
+
+-- Modify animals table: 
+
+-----Remove column species
+ALTER TABLE animals DROP COLUMN species;
+
+----Add column species_id which is a foreign key referencing species table;
+ALTER TABLE animals ADD COLUMN species_id INT REFERENCES species(id);
+
+----Add column owner_id which is a foreign key referencing the owners table
+ALTER TABLE animals ADD COLUMN owner_id INT REFERENCES owners(id);
