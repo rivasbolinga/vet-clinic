@@ -131,3 +131,17 @@ SELECT * FROM animals WHERE owner_id = (SELECT id FROM owners WHERE full_name = 
   -- Who owns the most animals?
 SELECT owners.full_name, COUNT(*) FROM owners JOIN animals ON animals.owner_id = owners.id GROUP BY owners.full_name ORDER BY COUNT(*) DESC
 LIMIT 1;
+
+----------------------------------------------------------------
+/* 4-- Add JOIN TABLE for visits */
+----------------------------------------------------------------
+
+-- Who was the last animal seen by William Tatcher?
+
+SELECT animals.name FROM animals JOIN visits ON visits.animal_id = animals.id WHERE vet_id = (SELECT id FROM vets WHERE name = 'William Tatcher') ORDER BY visit_date DESC LIMIT 1;
+
+-- How many different animals did Stephanie Mendez see?
+
+SELECT COUNT(*) FROM
+
+SELECT COUNT(DISTINCT visits.animal_id) FROM visits WHERE vet_id = (SELECT id FROM vets WHERE name = 'Stephanie Mendez');
