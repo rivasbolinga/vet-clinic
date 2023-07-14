@@ -10,6 +10,7 @@
   - [🚀 Live Demo](#live-demo)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
+- [🙏 Acknowledgements](#acknowledgements)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 
@@ -40,8 +41,8 @@ VET CLINIC is a relational database of a vet clinic. I have constructed this dat
 - **Database vet_clinic created in my local environment**
 - **Created a table called animals with the columns: id, name, date_of_birth, escape_attempts, neutered, weight_kg**
 - **Created a table called owners with the columns: id, full_name, and age**
-- - **Created a table species with the columns: id and name**
-  - 
+- **Created a table species with the columns: id and name**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
