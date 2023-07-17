@@ -84,3 +84,8 @@ CREATE TABLE visits (
     PRIMARY KEY (vet_id, animal_id, visit_date)
 );
 
+----------------------------------------------------------    
+/* 5-- Database performance Audit */
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
