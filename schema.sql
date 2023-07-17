@@ -91,13 +91,16 @@ ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 
 -- Use EXPLAIN ANALYZE on the previous queries to check what is happening. Take screenshots of them - they will be necessary later.
 EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
 
---Find a way to decrease the execution time of the first query. Look for hints in the previous lessons.
-INSERT INDEX index_animal ON visits(animal_id);
+
+--First query
+CREATE INDEX index_animal ON visits(animal_id);
 EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
 
 --SECOND QUERY
-CREATE INDEX index_vet ON visits(vet_id) WHERE vet_id=2;
+CREATE INDEX ver_id_index ON visits(vet_id) INCLUDE ( animal_id, visits_date) WHERE vet_id=2;
 EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
 
 --Third query
