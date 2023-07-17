@@ -176,3 +176,5 @@ WHERE vet_id = (SELECT id FROM vets WHERE name = 'Maisy Smith')
 GROUP BY species.name
 ORDER BY COUNT(*) DESC
 LIMIT 1;
+
+SELECT seller, COUNT(*) from Sales GROUP BY Seller;

@@ -8,8 +8,7 @@ CREATE TABLE animals (
     date_of_birth DATE NOT NULL,
     escape_attempts INT NOT NULL,
     neutered BOOLEAN NOT NULL,
-    weight_kg FLOAT NOT NULL,
-);
+    weight_kg FLOAT NOT NULL);
 
 ----------------------------------------------------------
 /* 2-- Update and delete table */
@@ -84,3 +83,26 @@ CREATE TABLE visits (
     PRIMARY KEY (vet_id, animal_id, visit_date)
 );
 
+----------------------------------------------------------    
+/* 5-- Database performance Audit */
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+-- Use EXPLAIN ANALYZE on the previous queries to check what is happening. Take screenshots of them - they will be necessary later.
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
+
+
+--First query
+CREATE INDEX index_animal ON visits(animal_id);
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
+
+--SECOND QUERY
+CREATE INDEX ver_id_index ON visits(vet_id) INCLUDE ( animal_id, visits_date) WHERE vet_id=2;
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+
+--Third query
+CREATE INDEX email_index ON owners(email);
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
