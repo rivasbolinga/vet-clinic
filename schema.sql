@@ -8,8 +8,7 @@ CREATE TABLE animals (
     date_of_birth DATE NOT NULL,
     escape_attempts INT NOT NULL,
     neutered BOOLEAN NOT NULL,
-    weight_kg FLOAT NOT NULL,
-);
+    weight_kg FLOAT NOT NULL);
 
 ----------------------------------------------------------
 /* 2-- Update and delete table */
@@ -95,5 +94,12 @@ EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
 
 --Find a way to decrease the execution time of the first query. Look for hints in the previous lessons.
 INSERT INDEX index_animal ON visits(animal_id);
-
 EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
+
+--SECOND QUERY
+CREATE INDEX index_vet ON visits(vet_id) WHERE vet_id=2;
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+
+--Third query
+CREATE INDEX email_index ON owners(email);
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
