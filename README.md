@@ -1,4 +1,8 @@
 
+#  VET CLINIC <a name="about-project"></a>
+
+<img width="878" alt="Screenshot 2023-07-18 at 11 49 24" src="https://github.com/rivasbolinga/vet-clinic/assets/103900838/e386f7c4-ff0c-4db6-8f6f-ad4fb777dfdc">
+
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -7,7 +11,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -18,7 +21,7 @@
 
 # 📖 VET CLINIC <a name="about-project"></a>
 
-VET CLINIC is a relational database of a vet clinic. I have constructed this database within my local environment to facilitate study and practice of transactions and queries in the database using PostgreSQL.
+VET CLINIC is a relational database of a veterinary clinic. I have constructed this database within my local environment to facilitate study and practice of transactions and queries in the database using PostgreSQL.
 
 
 
@@ -45,11 +48,6 @@ VET CLINIC is a relational database of a vet clinic. I have constructed this dat
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-Not available at the moment. Coming soon...
 
 <!-- AUTHORS -->
 
@@ -60,6 +58,12 @@ Not available at the moment. Coming soon...
 - GitHub: [@rivasbolinga](https://github.com/rivasbolinga)
 - LinkedIn: [Andrea Rivas](https://www.linkedin.com/in/andrearivaspalacios/)
 
+👤 **Safari Hamuli**
+
+- GitHub: [@danielsafari143]([https://github.com/githubhandle](https://github.com/danielsafari143))
+- LinkedIn: [Safari Daniel](https://www.linkedin.com/in/safari-daniel/)
+
+ 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
