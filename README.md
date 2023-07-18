@@ -1,4 +1,4 @@
-<div aling="center"><img width="200" alt="Screenshot 2023-07-18 at 12 58 05" src="https://github.com/rivasbolinga/vet-clinic/assets/103900838/020d6549-83d8-4ae6-b5f9-dc033c004104"></div>
+<div align="center"><img width="200" alt="Screenshot 2023-07-18 at 12 58 05" src="https://github.com/rivasbolinga/vet-clinic/assets/103900838/020d6549-83d8-4ae6-b5f9-dc033c004104"></div>
 
 #  PATITAS <a name="about-project"></a>
 
