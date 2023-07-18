@@ -1,10 +1,10 @@
-<div align="center"><img width="200" alt="Screenshot 2023-07-18 at 12 58 05" src="https://github.com/rivasbolinga/vet-clinic/assets/103900838/020d6549-83d8-4ae6-b5f9-dc033c004104"></div>
+<div align="center"><img width="200" alt="Screenshot 2023-07-18 at 12 58 05" src="https://github.com/rivasbolinga/vet-clinic/assets/103900838/020d6549-83d8-4ae6-b5f9-dc033c004104">
 
-#  PATITAS <a name="about-project"></a>
+#  PATITAS VETERINARY CLINIC <a name="about-project"></a>
 
 
 <img width="878" alt="Screenshot 2023-07-18 at 11 49 24" src="https://github.com/rivasbolinga/vet-clinic/assets/103900838/e386f7c4-ff0c-4db6-8f6f-ad4fb777dfdc">
-
+</div>
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
