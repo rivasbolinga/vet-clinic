@@ -1,5 +1,7 @@
+<img width="200" alt="Screenshot 2023-07-18 at 12 58 05" src="https://github.com/rivasbolinga/vet-clinic/assets/103900838/020d6549-83d8-4ae6-b5f9-dc033c004104">
 
-#  VET CLINIC <a name="about-project"></a>
+#  PATITAS <a name="about-project"></a>
+
 
 <img width="878" alt="Screenshot 2023-07-18 at 11 49 24" src="https://github.com/rivasbolinga/vet-clinic/assets/103900838/e386f7c4-ff0c-4db6-8f6f-ad4fb777dfdc">
 
@@ -19,7 +21,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 VET CLINIC <a name="about-project"></a>
+# 📖 PATITAS  <a name="about-project"></a>
 
 VET CLINIC is a relational database of a veterinary clinic. I have constructed this database within my local environment to facilitate study and practice of transactions and queries in the database using PostgreSQL.
 
